@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+  width: 300px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: right;
+  background-color: #ffffffcc;
+  margin-bottom: 20px;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  transform: scale(1.05);
+}
+
+button.clear {
+  background: #f44336;
+}
+
+button.clear:hover {
+  background: #d32f2f;
+}
+
+button.delete {
+  background: #ff9800;
+}
+
+button.delete:hover {
+  background: #fb8c00;
+}
+
+button.equals {
+  background: #4caf50;
+  grid-row: span 2;
+}
+
+button.equals:hover {
+  background: #43a047;
+}
